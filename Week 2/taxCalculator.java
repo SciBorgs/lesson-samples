@@ -1,13 +1,15 @@
-class taxCalculator {
+public class taxCalculator {
     public static void main(String[] args) {
-        System.out.println(calcTotal(2.00, 0.08875, 0.19));
+        System.out.println(calculateTotal(50.00, 0.09, 0.10));
+        System.out.println(calculateTotal(56.00, 0.09, 0.10));
+        System.out.println(calculateTotal(51.00, 0.09, 0.10));
+        System.out.println(calculateTotal(54.00, 0.09, 0.10));
+        System.out.println(calculateTotal(56.00, 0.09, 0.10));   
     }
-
-    static double calcTotal(double subTotal, double taxRate, double tipRate) {
-        double tax = subTotal * taxRate;
-        double tip = subTotal * tipRate;
-        /*return subTotal + tax + tip;*/
+    public static double calculateTotal(double subTotal, double taxRate, double tipRate) {
+        double tax = taxRate * subTotal;
+        double tip = tipRate * subTotal;
         double total = subTotal + tax + tip;
-        return Math.floor(total * 100) / 100;
+        return total;
     }
-}   
+}
