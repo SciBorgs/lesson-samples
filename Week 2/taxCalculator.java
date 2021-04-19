@@ -11,19 +11,3 @@ class taxCalculator {
         return Math.floor(total * 100) / 100;
     }
 }   
-
-
-
-
-
-/* 
-        if (x < 4 && y > 15) {
-            System.out.println("1");
-        } else if (x > 4) {
-            System.out.println("2");
-        } else if (y > 15) {
-            System.out.println("3");
-        } else {
-            System.out.println("4");
-        }
-*/
